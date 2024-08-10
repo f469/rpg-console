@@ -5,14 +5,16 @@ using namespace Core;
 using namespace Interface;
 
 int main(int argc, char **argv) {
-  DTO::CHARACTER characterDTO;
-
+  char action{};
   Console console = Console();
 
-  console.ask(characterDTO);
+  while (1) {
+    char response = console.ask(action);
 
-  Character character = Character(characterDTO);
-  console.print(character.toDTO());
+    if (response == 'q') {
+      break;
+    }
+  }
 
   return 0;
 }

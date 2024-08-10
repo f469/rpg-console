@@ -8,7 +8,20 @@ namespace Interface {
 using namespace std;
 using namespace Core;
 
-void Console::ask(DTO::CHARACTER &character) {
+char Console::ask(char &action) {
+  cout << "What do you do ?";
+  cin >> action;
+
+  if (action == 'q') {
+    return action;
+  }
+
+  return Console::process(action);
+}
+
+char Console::process(char &action) { return action; }
+
+void Console::createCharacter(DTO::CHARACTER &character) {
   cout << "Name : ";
   cin >> character.name;
   cout << "Genre : ";

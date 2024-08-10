@@ -9,7 +9,12 @@ class Console
 
 {
  public:
-  void ask(DTO::CHARACTER &character);
+  char ask(char &action);
+
+ private:
+  char process(char &action);
+
+  void createCharacter(DTO::CHARACTER &character);
 
  public:
   void print(DTO::CHARACTER character);
