@@ -1,7 +1,8 @@
+#include "./Console.hpp"
+
 #include <iostream>
 
 #include "../Core/DTO/Character.hpp"
-#include "./Console.hpp"
 
 namespace Interface {
 using namespace std;
@@ -22,4 +23,4 @@ void Console::print(DTO::CHARACTER character) {
   cout << "Genre : " << character.genre << endl;
   cout << "Age : " << character.age << endl;
 }
-} // namespace Interface
+}  // namespace Interface

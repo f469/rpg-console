@@ -8,21 +8,21 @@
 namespace Core {
 using namespace std;
 class Character {
-private:
+ private:
   string name{"name"};
   string genre{"genre"};
   int age{0};
 
-public:
+ public:
   Character(DTO::CHARACTER character) {
     name = character.name;
     genre = character.genre;
     age = character.age;
   }
 
-public:
+ public:
   DTO::CHARACTER toDTO();
 };
-} // namespace Core
+}  // namespace Core
 
 #endif

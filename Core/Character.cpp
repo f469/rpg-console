@@ -1,7 +1,7 @@
+#include "Character.hpp"
+
 #include <iostream>
 #include <string>
-
-#include "Character.hpp"
 
 namespace Core {
 using namespace std;
@@ -15,4 +15,4 @@ DTO::CHARACTER Character::toDTO() {
 
   return dto;
 }
-} // namespace Core
+}  // namespace Core

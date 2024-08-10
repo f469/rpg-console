@@ -8,12 +8,12 @@ using namespace Core;
 class Console
 
 {
-public:
+ public:
   void ask(DTO::CHARACTER &character);
 
-public:
+ public:
   void print(DTO::CHARACTER character);
 };
-} // namespace Interface
+}  // namespace Interface
 
 #endif

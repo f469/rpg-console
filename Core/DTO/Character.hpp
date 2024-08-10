@@ -10,6 +10,6 @@ struct CHARACTER {
   string genre;
   int age;
 };
-} // namespace Core::DTO
+}  // namespace Core::DTO
 
 #endif
