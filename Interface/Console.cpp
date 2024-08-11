@@ -9,7 +9,7 @@ using namespace std;
 using namespace Core;
 
 char Console::ask(char &action) {
-  cout << "What do you do ?";
+  cout << "What do you do ?" << endl;
   cin >> action;
 
   if (action == 'q') {
@@ -24,16 +24,10 @@ char Console::process(char &action) { return action; }
 void Console::createCharacter(DTO::CHARACTER &character) {
   cout << "Name : ";
   cin >> character.name;
-  cout << "Genre : ";
-  cin >> character.genre;
-  cout << "Age : ";
-  cin >> character.age;
 }
 
 void Console::print(DTO::CHARACTER character) {
   cout << "=========" << endl;
   cout << "Name : " << character.name << endl;
-  cout << "Genre : " << character.genre << endl;
-  cout << "Age : " << character.age << endl;
 }
 }  // namespace Interface

@@ -7,8 +7,6 @@ namespace Core::DTO {
 using namespace std;
 struct CHARACTER {
   string name;
-  string genre;
-  int age;
 };
 }  // namespace Core::DTO
 

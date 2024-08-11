@@ -9,6 +9,8 @@ int main(int argc, char **argv) {
   Console console = Console();
 
   while (1) {
+    console.start()
+
     char response = console.ask(action);
 
     if (response == 'q') {
