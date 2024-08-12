@@ -12,9 +12,7 @@ class Character {
   string name{"name"};
 
  public:
-  Character(DTO::CHARACTER character) {
-    name = character.name;
-  }
+  Character(DTO::CHARACTER character) { name = character.name; }
 
  public:
   DTO::CHARACTER toDTO();

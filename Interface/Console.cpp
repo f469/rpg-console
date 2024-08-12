@@ -19,15 +19,18 @@ char Console::ask(char &action) {
   return Console::process(action);
 }
 
-char Console::process(char &action) { return action; }
+void Console::start(DTO::CHARACTER &hero) {
+  cout << "Your adventure begin here !" << endl;
+  cout << "At any moment enter 'h' to see your options" << endl;
+  cout << "First, what's your name ?" << endl;
+
+  Console::createCharacter(hero);
+}
+
+char Console::process(char action) { return action; }
 
 void Console::createCharacter(DTO::CHARACTER &character) {
   cout << "Name : ";
   cin >> character.name;
-}
-
-void Console::print(DTO::CHARACTER character) {
-  cout << "=========" << endl;
-  cout << "Name : " << character.name << endl;
 }
 }  // namespace Interface
