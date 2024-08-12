@@ -9,19 +9,20 @@ class Console
 
 {
  public:
- public:
   void start(DTO::CHARACTER &hero);
 
+  void printContext();
+
   char ask(char &action);
+
+  void printHelp();
+
+  void printMenu();
 
  private:
   char process(char action);
 
   void createCharacter(DTO::CHARACTER &character);
-
-  void printHelp();
-
-  void printMenu();
 };
 }  // namespace Interface
 

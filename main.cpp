@@ -12,11 +12,11 @@ int main() {
   console.start(hero);
 
   while (1) {
+    console.printContext();
     char response = console.ask(action);
 
     if (response == 'q') {
       break;
-    } else if (response == 'h') {
     }
   }
 
